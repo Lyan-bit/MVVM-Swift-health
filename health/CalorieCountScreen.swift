@@ -5,7 +5,7 @@ struct CalorieCountScreen: View {
 	@State var calorieCountBean : CalorieCountVO = CalorieCountVO()
 	@State var calorieCountResult : Double = 0.0
 	
-	@ObservedObject var model : ModelFacade
+	@ObservedObject var model : CalorieCountViewModel
 	
 	var body: some View {
 	  	NavigationView {
@@ -50,7 +50,7 @@ struct CalorieCountScreen: View {
 
 struct CalorieCountScreen_Previews: PreviewProvider {
     static var previews: some View {
-        CalorieCountScreen(model: ModelFacade.getInstance())
+        CalorieCountScreen(model: CalorieCountViewModel.getInstance())
     }
 }
 

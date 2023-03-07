@@ -5,14 +5,15 @@ import SwiftUI
 
 struct ContentView : View {
 	
-	@ObservedObject var model : ModelFacade
+	@ObservedObject var calorieCountViewModel : CalorieCountViewModel
+    @ObservedObject var computeBMIViewModel : ComputeBMIViewModel
 	                                       
 	var body: some View {
 		TabView {
-            ComputeBMIScreen (model: model).tabItem { 
+            ComputeBMIScreen (model: computeBMIViewModel).tabItem {
                         Image(systemName: "1.square.fill")
 	                    Text("ComputeBMI")} 
-            CalorieCountScreen (model: model).tabItem { 
+            CalorieCountScreen (model: calorieCountViewModel).tabItem {
                         Image(systemName: "2.square.fill")
 	                    Text("CalorieCount")} 
 				}.font(.headline)
@@ -21,7 +22,7 @@ struct ContentView : View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(model: ModelFacade.getInstance())
+        ContentView(calorieCountViewModel: CalorieCountViewModel.getInstance(), computeBMIViewModel: ComputeBMIViewModel.getInstance())
     }
 }
 

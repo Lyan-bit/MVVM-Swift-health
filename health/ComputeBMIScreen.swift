@@ -7,7 +7,7 @@ struct ComputeBMIScreen: View {
 	
 		@State var isShowingAlert2 = false
 		@State var isShowingAlert3 = false
-	@ObservedObject var model : ModelFacade
+	@ObservedObject var model : ComputeBMIViewModel
 	
 	var body: some View {
 	  	NavigationView {
@@ -62,7 +62,7 @@ struct ComputeBMIScreen: View {
 
 struct ComputeBMIScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ComputeBMIScreen(model: ModelFacade.getInstance())
+        ComputeBMIScreen(model: ComputeBMIViewModel.getInstance())
     }
 }
 

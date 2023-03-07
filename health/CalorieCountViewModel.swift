@@ -3,39 +3,21 @@ import Foundation
 import SwiftUI
 
 
-class ModelFacade : ObservableObject {
+class CalorieCountViewModel : ObservableObject {
 		                      
-	static var instance : ModelFacade? = nil
+	static var instance : CalorieCountViewModel? = nil
 
-	static func getInstance() -> ModelFacade { 
+	static func getInstance() -> CalorieCountViewModel {
 		if instance == nil
-	     { instance = ModelFacade() 
+	     { instance = CalorieCountViewModel()
 	        }
 	    return instance! }
 	                          
 	init() { 
 		// init
 	}
-	      
-
-		func computeBMI (x: ComputeBMIVO) -> Double {
-	      var result = 0.0
-
- let heights: Double  = x.getHeights()
- let weight: Double  = x.getWeight()
-  result  = weight / (heights * heights)
-	if x.isComputeBMIError()
-	   {   return result }
-	   
-	return result
-        
-    }
-       
-	func cancelComputeBMI() {
-		//cancel function
-	}
 	          
-		func calorieCount (x: CalorieCountVO) -> Double {
+func calorieCount (x: CalorieCountVO) -> Double {
 	      var result = 0.0
 
  let exercise: String  = x.getExercise()

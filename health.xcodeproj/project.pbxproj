@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0242567729B68BF800ADE84B /* ComputeBMIViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0242567629B68BF800ADE84B /* ComputeBMIViewModel.swift */; };
 		0260811829AD8D57002DCF9A /* CalorieCountScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260810F29AD8D57002DCF9A /* CalorieCountScreen.swift */; };
 		0260811929AD8D57002DCF9A /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260811029AD8D57002DCF9A /* Exercise.swift */; };
 		0260811A29AD8D57002DCF9A /* HealthMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260811129AD8D57002DCF9A /* HealthMain.swift */; };
@@ -14,13 +15,14 @@
 		0260811C29AD8D57002DCF9A /* ComputeBMIScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260811329AD8D57002DCF9A /* ComputeBMIScreen.swift */; };
 		0260811D29AD8D57002DCF9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260811429AD8D57002DCF9A /* ContentView.swift */; };
 		0260811E29AD8D57002DCF9A /* CalorieCountVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260811529AD8D57002DCF9A /* CalorieCountVO.swift */; };
-		0260811F29AD8D57002DCF9A /* ModelFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260811629AD8D57002DCF9A /* ModelFacade.swift */; };
+		0260811F29AD8D57002DCF9A /* CalorieCountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260811629AD8D57002DCF9A /* CalorieCountViewModel.swift */; };
 		0260812029AD8D57002DCF9A /* ComputeBMIVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0260811729AD8D57002DCF9A /* ComputeBMIVO.swift */; };
 		028C740F299A8CD000D197B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028C740E299A8CD000D197B7 /* Assets.xcassets */; };
 		028C7412299A8CD000D197B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 028C7411299A8CD000D197B7 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0242567629B68BF800ADE84B /* ComputeBMIViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputeBMIViewModel.swift; sourceTree = "<group>"; };
 		0260810F29AD8D57002DCF9A /* CalorieCountScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieCountScreen.swift; sourceTree = "<group>"; };
 		0260811029AD8D57002DCF9A /* Exercise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		0260811129AD8D57002DCF9A /* HealthMain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthMain.swift; sourceTree = "<group>"; };
@@ -28,7 +30,7 @@
 		0260811329AD8D57002DCF9A /* ComputeBMIScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputeBMIScreen.swift; sourceTree = "<group>"; };
 		0260811429AD8D57002DCF9A /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0260811529AD8D57002DCF9A /* CalorieCountVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieCountVO.swift; sourceTree = "<group>"; };
-		0260811629AD8D57002DCF9A /* ModelFacade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelFacade.swift; sourceTree = "<group>"; };
+		0260811629AD8D57002DCF9A /* CalorieCountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalorieCountViewModel.swift; sourceTree = "<group>"; };
 		0260811729AD8D57002DCF9A /* ComputeBMIVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComputeBMIVO.swift; sourceTree = "<group>"; };
 		028C7407299A8CCE00D197B7 /* health.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = health.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		028C740E299A8CD000D197B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,7 +76,8 @@
 				0260811029AD8D57002DCF9A /* Exercise.swift */,
 				0260811229AD8D57002DCF9A /* Gender.swift */,
 				0260811129AD8D57002DCF9A /* HealthMain.swift */,
-				0260811629AD8D57002DCF9A /* ModelFacade.swift */,
+				0260811629AD8D57002DCF9A /* CalorieCountViewModel.swift */,
+				0242567629B68BF800ADE84B /* ComputeBMIViewModel.swift */,
 				028C740E299A8CD000D197B7 /* Assets.xcassets */,
 				028C7410299A8CD000D197B7 /* Preview Content */,
 				028C7418299A8CF400D197B7 /* health-Bridging-Header.h */,
@@ -162,10 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0260811B29AD8D57002DCF9A /* Gender.swift in Sources */,
-				0260811F29AD8D57002DCF9A /* ModelFacade.swift in Sources */,
+				0260811F29AD8D57002DCF9A /* CalorieCountViewModel.swift in Sources */,
 				0260812029AD8D57002DCF9A /* ComputeBMIVO.swift in Sources */,
 				0260811829AD8D57002DCF9A /* CalorieCountScreen.swift in Sources */,
 				0260811D29AD8D57002DCF9A /* ContentView.swift in Sources */,
+				0242567729B68BF800ADE84B /* ComputeBMIViewModel.swift in Sources */,
 				0260811E29AD8D57002DCF9A /* CalorieCountVO.swift in Sources */,
 				0260811C29AD8D57002DCF9A /* ComputeBMIScreen.swift in Sources */,
 				0260811A29AD8D57002DCF9A /* HealthMain.swift in Sources */,

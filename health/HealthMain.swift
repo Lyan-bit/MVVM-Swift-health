@@ -7,7 +7,7 @@ struct healthMain : App {
 
 	var body: some Scene {
 	        WindowGroup {
-	            ContentView(model: ModelFacade.getInstance())
+                ContentView(calorieCountViewModel: CalorieCountViewModel.getInstance(), computeBMIViewModel: ComputeBMIViewModel.getInstance())
 	        }
 	    }
 	} 
